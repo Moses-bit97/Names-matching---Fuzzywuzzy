@@ -1,0 +1,15 @@
+Process the attached CSV file which includes list of Activity IDs & names, and generate mutually-exclusive clusters of matching names.
+
+The names should match based on NLP phrase/sentence matching including application of fuzzy-logic and synonyms (thesaurus). 
+Cluster min size is 2. It is expected to find more than just the trivial equal strings matching.
+
+The program input parameter is a file (as attached) and its output response should be all clusters found in CSV format. 
+Each row should include a cluster unique id, and its corresponding Activity IDs & names. 
+
+For example, with attached sample file, the following activities should match same cluster:
+Cluster#1: Delay#22.3 Contractor C February 2021 Cx Constraints
+Cluster#1: Delay#22.4 Contractor B February 2021 Cx Constraints
+Cluster#2: Delay in UPM Delivery (Duration = Colo3 Cell-2 11/23 to MSFT delivery)
+Cluster#2: Delay in UPM Delivery (Duration = Colo4 Cell-1 12/7 to MSFT delivery)
+Cluster#3: COLO-3 Cell-4 WA State L&I onsite inspection & Approval to Connect to MER
+Cluster#3: COLO-4 Cell-1 WA State L&I onsite checkup & Approval to Connect to MER
